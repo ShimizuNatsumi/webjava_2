@@ -36,7 +36,7 @@ public class ListService {
    * @param id
    * @return map
    */
-  public Map<Integer,Work> getItemListById(int id) {
+  public Map<Integer,Work> getWorkListById(int id) {
 
     /*
      * Mapとは

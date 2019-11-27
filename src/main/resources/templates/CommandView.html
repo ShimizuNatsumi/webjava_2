@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+コマンド
+<form action="#" th:action="@{/buttle}" method="get">
+<th:block th:each="work: ${works}">
+    <dt><br>
+      <span class="worklist" th:text="${work.value.job}"></span><br>
+    </dt>
+  </th:block>
+  <input type="submit" value="戦う" />
+</form>
+</body>
+</html>

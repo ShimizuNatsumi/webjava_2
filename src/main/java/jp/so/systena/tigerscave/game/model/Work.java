@@ -12,24 +12,24 @@ public class Work {
 
     public String getJob() {
       return this.job;
-    }
+      }
 
     // setter
     public void setJob(String job) {
       this.job = job;
-    }
+      }
 
     //ID
     private int id;
 
     public int getId() {
       return this.id;
-    }
+      }
 
     // setter
     public void setId(int id) {
       this.id = id;
-    }
+      }
 
     private String selectedRadio;
 

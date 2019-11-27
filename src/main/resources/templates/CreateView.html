@@ -7,11 +7,11 @@
 <body>
 キャラ作成<br>
 職業<br>
+<form action="#" th:action="@{/command}" method="post"><br>
 	<th:block th:each="work: ${works}">
-		<form action="#" th:action="@{/command}" method="post"><br>
-		    		<input type="radio" name="Radio" th:value="${work.value.id}" th:field="*{selectedRadio}"/>
+			<input type="radio" name="selectedRadio" th:value="${work.value.id}"/>
       		<span class="worklist" th:text="${work.value.job}"></span><br>
-    	</form>
-	</th:block>
+	</th:block><br>
 	<input type="submit" value="決定"/>
+	</form>
 </body>
